@@ -1,0 +1,23 @@
+/*Read the directions I attatched in the README.md*/
+
+@-moz-document url(about:home), url(about:newtab), url(about:privatebrowsing){ /* Mozilla document enables the background on all different variations of tabs.*/
+    /*The entire section until body::before IF you have no use for the top sites, etc. For me I don't need this because I removed the stuff from my homepage previous to this.*/
+    .click-target-container *, .top-sites-list * { /*Alters the colors of the various sections on the default Mozilla firefox homepage to be white and a shadow. */
+        color: #fff !important ; /*white text; can be altered*/
+        text-shadow: 2px 2px 2px #222 !important ; /*Dark Text Shadow; all of these can be changed.*/
+    } 
+
+    body::before { /*loads the image; in my case it is not filled out. That will not be to filled out by yourself.*/
+        content: "" ; /*Loads to body::before, which has a fixed position and the width/height of a viewport.*/
+        z-index: -1 ;
+        position: fixed; /*anchors the picture so it will not move around, more details below*/
+        top: 0 ;
+        left: 0 ;
+        background: #f9a no-repeat /*If no image is filled in the parentheses, it will automatically just go to the color #f9a, which is a pink shade.*/ url(INSERT IMAGE HERE.) /*Image URL goes into the parentheses which is denoted by URL.*/ center ;
+        background-size: cover ; /*anchors the picture to one focal point. by minimizing or moving the webpage to different sizes the picture's quality will not be altered.*/ 
+        width: 100vw ;
+        height: 100vh ;
+    }
+}
+
+/*Position: refers to how the picture will be affected by the web browser. The one I provided is at a fixed position. No moving the browser will ever affect it. However, you can change it to Relative, sticky, etc. and see how it affects the overall image.*
