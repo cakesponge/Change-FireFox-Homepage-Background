@@ -20,3 +20,5 @@ Inside, you will paste in the contents of the file attached in this repository b
 Next, you will want to go to about:config in the Firefox search bar.
 
 Accept the risks (no real risks), then paste in "toolkit.legacyUserProfileCustomizations.stylesheet" into the search bar. There you wil find the option to start up the userContent file. Turn this to true. Now, exit Firefox and when you open a new page it should look like the image.
+
+![image](https://user-images.githubusercontent.com/67387897/112244884-26e5f400-8c0d-11eb-93b9-64c858603bd4.png)
